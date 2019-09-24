@@ -8,7 +8,7 @@ class Simple {
      * Вычислить дискриминант квадратного уравнения
      */
     double discriminant(double a, double b, double c) {
-        System.out.println("hello world");
+        //TODO your code
         return 0.0;
     }
 
