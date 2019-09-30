@@ -7,7 +7,6 @@ import java.util.List;
  * Medium
  * <p>
  * Необходимо реализовать все методы класса Матрица.
- * Стуктуру данных для самой матрицы разрешается выбрать самостоятельно
  * из списка: ArrayList<Integer>, int[], int[][] и т.д.
  */
 @SuppressWarnings("WeakerAccess")

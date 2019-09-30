@@ -63,7 +63,7 @@ class ListTask {
      * Hard
      *
      * Отсортировать входной список по возрастанию с помощью Quick Sort
-     * (алгоритм реализовать самостоятельно)
+     * (алгоритм реализовать самостоятельно!)
      */
     List<Integer> quickSort(List<Integer> list) {
         // TODO your code
