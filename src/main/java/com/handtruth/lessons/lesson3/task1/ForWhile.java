@@ -7,7 +7,7 @@ class ForWhile {
      * <p>
      * Вычислить факториал
      */
-    int factorial(int n) {
+    long factorial(int n) {
         // TODO your code
         return 0;
     }
