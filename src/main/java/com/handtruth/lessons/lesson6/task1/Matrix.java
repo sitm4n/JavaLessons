@@ -7,7 +7,6 @@ import java.util.List;
  * Medium
  * <p>
  * Необходимо реализовать все методы класса Матрица.
- * из списка: ArrayList<Integer>, int[], int[][] и т.д.
  */
 @SuppressWarnings("WeakerAccess")
 public class Matrix {
@@ -17,7 +16,7 @@ public class Matrix {
 
     /**
      * Easy
-     * <p>
+     * 
      * Реализовать конструктор
      *
      * @param matrix - исходная матрица
@@ -29,7 +28,7 @@ public class Matrix {
 
     /**
      * Easy
-     * <p>
+     * 
      * Реализовать конструктор
      *
      * @param height высота матрицы
