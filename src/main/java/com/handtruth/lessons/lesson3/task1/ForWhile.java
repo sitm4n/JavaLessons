@@ -42,7 +42,7 @@ class ForWhile {
      * sin(x) = x - x^3 / 3! + x^5 / 5! - x^7 / 7! + ...
      * Нужную точность считать достигнутой, если очередной член ряда меньше eps по модулю
      */
-    double sin(double x, double exp) {
+    double sin(double x, double eps) {
         // TODO your code
         return 0;
     }

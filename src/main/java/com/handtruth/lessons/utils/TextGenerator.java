@@ -10,14 +10,15 @@ import java.util.Random;
 
 public class TextGenerator {
 
-    private static String getAlphaNumericString(int n) {
+    private static String alphaSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            + "0123456789"
+            + "abcdefghijklmnopqrstuvxyz";
 
-        // chose a Character random from this String
-        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                + "0123456789"
-                + "abcdefghijklmnopqrstuvxyz";
+    private static String numericSet = "0123456789";
 
-        // create StringBuffer size of AlphaNumericString
+
+    private static String getString(int n, String set) {
+        // create StringBuilder size of AlphaNumericString
         StringBuilder sb = new StringBuilder(n);
 
         for (int i = 0; i < n; i++) {
@@ -25,57 +26,31 @@ public class TextGenerator {
             // generate a random number between
             // 0 to AlphaNumericString variable length
             int index
-                    = (int) (AlphaNumericString.length()
+                    = (int) (set.length()
                     * Math.random());
 
             // add Character one by one in end of sb
-            sb.append(AlphaNumericString
+            sb.append(set
                     .charAt(index));
         }
 
         return sb.toString();
     }
 
-
-    private static String getAlphaNumericUnderScoreString(int n) {
-
-        // chose a Character random from this String
-        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                + "0123456789"
-                + "abcdefghijklmnopqrstuvxyz" + "_";
-
-        // create StringBuffer size of AlphaNumericString
-        StringBuilder sb = new StringBuilder(n);
-
-        for (int i = 0; i < n; i++) {
-
-            // generate a random number between
-            // 0 to AlphaNumericString variable length
-            int index
-                    = (int) (AlphaNumericString.length()
-                    * Math.random());
-
-            // add Character one by one in end of sb
-            sb.append(AlphaNumericString
-                    .charAt(index));
-        }
-
-        return sb.toString();
-    }
 
     private static String generateNick() {
         Random random = new Random();
-        return getAlphaNumericUnderScoreString(random.nextInt(10) + 1);
+        return getString(random.nextInt(10) + 1, alphaSet + numericSet + "_");
     }
 
     private static String generateServiceDomen() {
         Random random = new Random();
-        return getAlphaNumericString(random.nextInt(20) + 1);
+        return getString(random.nextInt(20) + 1, alphaSet + numericSet);
     }
 
     private static String generateRandomString() {
         Random random = new Random();
-        return getAlphaNumericUnderScoreString(random.nextInt(20) + 1);
+        return getString(random.nextInt(20) + 1, alphaSet + numericSet + "_");
     }
 
 
