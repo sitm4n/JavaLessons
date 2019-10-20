@@ -47,10 +47,10 @@ class MatrixTools {
     /**
      * Medium
      * <p>
-     * Детерменант матрицы
+     * Детерминант матрицы
      *
      * @param matrix исходная матрица
-     * @return детерменант матрицы
+     * @return детерминант матрицы
      */
     static int determinant(Matrix matrix) {
         return -1;
